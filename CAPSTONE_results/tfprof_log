@@ -24,9 +24,9 @@ c
 b
 ]model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/candidate/candidate/BiasAdd€ 
 c
-\model/att_seq2seq/decode/attention_decoder/decoder/while/attention/att_keys/Tensordot/MatMul€€€
+\model/att_seq2seq/decode/attention_decoder/decoder/while/attention/att_keys/Tensordot/MatMul€€€
 Y
-Smodel/att_seq2seq/decode/attention_decoder/decoder/while/attention/att_keys/BiasAdd€à
+Smodel/att_seq2seq/decode/attention_decoder/decoder/while/attention/att_keys/BiasAdd€ 
 Y
 Smodel/att_seq2seq/decode/attention_decoder/decoder/while/attention/att_query/MatMul€€@
 Y
@@ -52,9 +52,9 @@ Gmodel/att_seq2seq/decode/attention_decoder/decoder/while/logits/BiasAdd 
 ‘
 Šmodel/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/attention/att_query/MatMul_grad/MatMul_1€€@
 ™
-‘model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/attention/att_keys/Tensordot/MatMul_grad/MatMul€€€
+‘model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/attention/att_keys/Tensordot/MatMul_grad/MatMul€€€
 ›
-“model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/attention/att_keys/Tensordot/MatMul_grad/MatMul_1€€€
+“model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/attention/att_keys/Tensordot/MatMul_grad/MatMul_1€€€
 ™
 ‘model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/candidate/candidate/MatMul_grad/MatMul€€€
 ›
