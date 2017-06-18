@@ -1,0 +1,28 @@
+Prediction followed by Target @ Step 901
+====================================================================================================
+4 13 9 14 5 SEQUENCE_END
+4 13 12 14 5 SEQUENCE_END
+
+4 13 9 14 5 SEQUENCE_END
+4 13 12 14 5 SEQUENCE_END
+
+4 13 9 14 5 SEQUENCE_END
+4 13 12 14 5 SEQUENCE_END
+
+4 4 13 9 14 5 11 7 5 SEQUENCE_END
+4 4 13 6 7 5 12 7 5 SEQUENCE_END
+
+4 13 13 9 14 5 2 15 5 SEQUENCE_END
+4 4 13 2 14 5 12 15 5 SEQUENCE_END
+
+4 13 9 14 5 SEQUENCE_END
+4 13 9 14 5 SEQUENCE_END
+
+4 4 13 12 14 5 SEQUENCE_END 4 13 12 15 5 SEQUENCE_END
+20 4 13 9 14 5 8 4 15 9 13 5 SEQUENCE_END
+
+4 13 13 12 14 5 2 4 13 12 15 5 5 SEQUENCE_END
+4 4 13 9 14 5 2 4 13 12 15 5 5 SEQUENCE_END
+
+====================================================================================================
+

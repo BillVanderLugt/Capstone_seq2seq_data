@@ -1733,7 +1733,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 530289906
+      i: 402027618
     }
   }
   attr {
@@ -2705,7 +2705,7 @@ node {
         dtype: DT_INT32
         tensor_shape {
         }
-        int_val: 32
+        int_val: 8
       }
     }
   }
@@ -2735,7 +2735,7 @@ node {
         dtype: DT_INT32
         tensor_shape {
         }
-        int_val: 32
+        int_val: 8
       }
     }
   }
@@ -2765,7 +2765,7 @@ node {
         dtype: DT_INT32
         tensor_shape {
         }
-        int_val: 32
+        int_val: 8
       }
     }
   }
@@ -2785,7 +2785,7 @@ node {
   attr {
     key: "capacity"
     value {
-      i: 5512
+      i: 5128
     }
   }
   attr {
@@ -2851,7 +2851,7 @@ node {
   attr {
     key: "capacity"
     value {
-      i: 5512
+      i: 5128
     }
   }
   attr {
@@ -2917,7 +2917,7 @@ node {
   attr {
     key: "capacity"
     value {
-      i: 5512
+      i: 5128
     }
   }
   attr {
@@ -2983,7 +2983,7 @@ node {
   attr {
     key: "capacity"
     value {
-      i: 5512
+      i: 5128
     }
   }
   attr {
@@ -3013,17 +3013,17 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -3031,12 +3031,12 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -4816,7 +4816,7 @@ node {
         dtype: DT_INT32
         tensor_shape {
         }
-        int_val: 32
+        int_val: 8
       }
     }
   }
@@ -4832,17 +4832,17 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -4850,12 +4850,12 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -4968,7 +4968,7 @@ node {
         dtype: DT_INT32
         tensor_shape {
         }
-        int_val: 32
+        int_val: 8
       }
     }
   }
@@ -4984,17 +4984,17 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -5002,12 +5002,12 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -5120,7 +5120,7 @@ node {
         dtype: DT_INT32
         tensor_shape {
         }
-        int_val: 32
+        int_val: 8
       }
     }
   }
@@ -5136,17 +5136,17 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -5154,12 +5154,12 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -5643,7 +5643,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.0001814223505789414
+        float_val: 0.00019500780035741627
       }
     }
   }
@@ -5670,7 +5670,7 @@ node {
   }
 }
 node {
-  name: "train_input_fn/bucket_queue/bucket/bucket/train_input_fn/bucket_queue/bucket/top_queue/fraction_of_5512_full/tags"
+  name: "train_input_fn/bucket_queue/bucket/bucket/train_input_fn/bucket_queue/bucket/top_queue/fraction_of_5128_full/tags"
   op: "Const"
   attr {
     key: "_output_shapes"
@@ -5694,15 +5694,15 @@ node {
         dtype: DT_STRING
         tensor_shape {
         }
-        string_val: "train_input_fn/bucket_queue/bucket/bucket/train_input_fn/bucket_queue/bucket/top_queue/fraction_of_5512_full"
+        string_val: "train_input_fn/bucket_queue/bucket/bucket/train_input_fn/bucket_queue/bucket/top_queue/fraction_of_5128_full"
       }
     }
   }
 }
 node {
-  name: "train_input_fn/bucket_queue/bucket/bucket/train_input_fn/bucket_queue/bucket/top_queue/fraction_of_5512_full"
+  name: "train_input_fn/bucket_queue/bucket/bucket/train_input_fn/bucket_queue/bucket/top_queue/fraction_of_5128_full"
   op: "ScalarSummary"
-  input: "train_input_fn/bucket_queue/bucket/bucket/train_input_fn/bucket_queue/bucket/top_queue/fraction_of_5512_full/tags"
+  input: "train_input_fn/bucket_queue/bucket/bucket/train_input_fn/bucket_queue/bucket/top_queue/fraction_of_5128_full/tags"
   input: "train_input_fn/bucket_queue/bucket/mul"
   attr {
     key: "T"
@@ -5732,17 +5732,17 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -5750,12 +5750,12 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -5820,54 +5820,54 @@ node {
         string_val: "50"
         string_val: "3"
         string_val: "0"
-        string_val: "9"
         string_val: "7"
+        string_val: "9"
         string_val: "15"
         string_val: "11"
         string_val: "42"
         string_val: "34"
         string_val: "39"
+        string_val: "17"
         string_val: "6"
         string_val: "52"
         string_val: "49"
         string_val: "12"
-        string_val: "17"
         string_val: "27"
         string_val: "26"
-        string_val: "30"
         string_val: "25"
         string_val: "36"
+        string_val: "14"
+        string_val: "30"
+        string_val: "24"
+        string_val: "13"
         string_val: "8"
         string_val: "53"
         string_val: "40"
+        string_val: "4"
         string_val: "38"
-        string_val: "37"
         string_val: "35"
         string_val: "31"
-        string_val: "24"
         string_val: "51"
-        string_val: "47"
-        string_val: "4"
-        string_val: "28"
-        string_val: "18"
-        string_val: "14"
-        string_val: "13"
-        string_val: "55"
         string_val: "5"
+        string_val: "37"
+        string_val: "55"
+        string_val: "47"
+        string_val: "46"
+        string_val: "43"
+        string_val: "33"
         string_val: "29"
+        string_val: "28"
+        string_val: "20"
+        string_val: "18"
+        string_val: "10"
         string_val: "54"
         string_val: "48"
-        string_val: "46"
         string_val: "45"
-        string_val: "43"
         string_val: "41"
-        string_val: "33"
         string_val: "23"
         string_val: "22"
         string_val: "21"
-        string_val: "20"
         string_val: "16"
-        string_val: "10"
         string_val: "UNK"
         string_val: "SEQUENCE_START"
         string_val: "SEQUENCE_END"
@@ -5906,7 +5906,7 @@ node {
             size: 56
           }
         }
-        tensor_content: "\000\000\000C\000\000\336B\000\000\212B\000\000 B\000\000\014B\000\000\370A\000\000\360A\000\000\270A\000\000\250A\000\000\230A\000\000\200A\000\000pA\000\000`A\000\000`A\000\000`A\000\000`A\000\000PA\000\0000A\000\000 A\000\000\020A\000\000\020A\000\000\300@\000\000\200@\000\000\200@\000\000\200@\000\000\200@\000\000\200@\000\000\200@\000\000\200@\000\000\200@\000\000@@\000\000@@\000\000@@\000\000@@\000\000@@\000\000@@\000\000@@\000\000\000@\000\000\000@\000\000\000@\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200\277\000\000\200\277\000\000\200\277"
+        tensor_content: "\000\000\000C\000\000\340B\000\000\206B\000\000\034B\000\000\004B\000\000\000B\000\000\370A\000\000\250A\000\000\250A\000\000\240A\000\000\220A\000\000\200A\000\000`A\000\000PA\000\000PA\000\000PA\000\000@A\000\0000A\000\000\000A\000\000\000A\000\000\300@\000\000\300@\000\000\240@\000\000\240@\000\000\240@\000\000\200@\000\000\200@\000\000\200@\000\000\200@\000\000\200@\000\000\200@\000\000\200@\000\000@@\000\000@@\000\000@@\000\000\000@\000\000\000@\000\000\000@\000\000\000@\000\000\000@\000\000\000@\000\000\000@\000\000\000@\000\000\000@\000\000\000@\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200?\000\000\200\277\000\000\200\277\000\000\200\277"
       }
     }
   }
@@ -6375,8 +6375,8 @@ node {
         string_val: "12"
         string_val: "11"
         string_val: "15"
-        string_val: "2"
         string_val: "6"
+        string_val: "2"
         string_val: "21"
         string_val: "3"
         string_val: "19"
@@ -6384,10 +6384,10 @@ node {
         string_val: "20"
         string_val: "18"
         string_val: "16"
-        string_val: "17"
         string_val: "1"
-        string_val: "0"
+        string_val: "17"
         string_val: "10"
+        string_val: "0"
         string_val: "UNK"
         string_val: "SEQUENCE_START"
         string_val: "SEQUENCE_END"
@@ -6426,7 +6426,7 @@ node {
             size: 25
           }
         }
-        tensor_content: "\000\000\201C\000\000\177C\000\000\020C\000\000\342B\000\000|B\000\000PB\000\000PB\000\000@B\000\000(B\000\000\000B\000\000\330A\000\000\240A\000\000\210A\000\000PA\000\000 A\000\000 A\000\000\200@\000\000\200@\000\000\000@\000\000\000@\000\000\000@\000\000\200?\000\000\200\277\000\000\200\277\000\000\200\277"
+        tensor_content: "\000\000\201C\000\000\177C\000\000\rC\000\000\346B\000\000\202B\000\000LB\000\000DB\000\000DB\000\000(B\000\000\000B\000\000\350A\000\000\230A\000\000\220A\000\000\210A\000\000 A\000\000 A\000\000\200@\000\000\200@\000\000@@\000\000\000@\000\000\200?\000\000\200?\000\000\200\277\000\000\200\277\000\000\200\277"
       }
     }
   }
@@ -6988,7 +6988,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -7075,7 +7075,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -7114,7 +7114,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -7146,7 +7146,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -7337,7 +7337,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -7424,7 +7424,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -7463,7 +7463,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -7495,7 +7495,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -7952,7 +7952,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -8403,7 +8403,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -8664,7 +8664,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -8690,7 +8690,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -9214,7 +9214,7 @@ node {
             size: 1
           }
         }
-        int_val: 32
+        int_val: 8
       }
     }
   }
@@ -9504,7 +9504,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -11151,7 +11151,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -11230,7 +11230,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -11313,7 +11313,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -11379,7 +11379,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -11406,7 +11406,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -11433,7 +11433,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -11459,7 +11459,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -11486,7 +11486,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -11513,7 +11513,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -11986,7 +11986,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -12057,7 +12057,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -12300,7 +12300,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -12332,7 +12332,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -12390,7 +12390,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -12398,7 +12398,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -12431,7 +12431,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -12904,7 +12904,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -12975,7 +12975,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -13218,7 +13218,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -13250,7 +13250,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -13277,7 +13277,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -13335,7 +13335,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -13362,7 +13362,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -13389,7 +13389,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -13415,7 +13415,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -13457,7 +13457,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -13526,7 +13526,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -13553,7 +13553,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -13578,7 +13578,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -13776,7 +13776,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -14007,7 +14007,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -14027,7 +14027,7 @@ node {
     value {
       shape {
         dim {
-          size: 32
+          size: 8
         }
         dim {
           size: 128
@@ -14095,7 +14095,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -14131,7 +14131,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -14218,7 +14218,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -14244,7 +14244,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -14768,7 +14768,7 @@ node {
             size: 1
           }
         }
-        int_val: 32
+        int_val: 8
       }
     }
   }
@@ -15058,7 +15058,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -16705,7 +16705,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -16784,7 +16784,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -16867,7 +16867,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -16933,7 +16933,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -16960,7 +16960,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -16987,7 +16987,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -17013,7 +17013,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -17040,7 +17040,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -17067,7 +17067,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -17540,7 +17540,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -17611,7 +17611,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -17854,7 +17854,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -17886,7 +17886,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -17944,7 +17944,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -17952,7 +17952,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -17985,7 +17985,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -18458,7 +18458,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -18529,7 +18529,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -18772,7 +18772,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -18804,7 +18804,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -18831,7 +18831,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -18889,7 +18889,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -18916,7 +18916,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -18943,7 +18943,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -18969,7 +18969,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -19011,7 +19011,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -19080,7 +19080,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -19107,7 +19107,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -19132,7 +19132,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -19330,7 +19330,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -19561,7 +19561,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -19581,7 +19581,7 @@ node {
     value {
       shape {
         dim {
-          size: 32
+          size: 8
         }
         dim {
           size: 128
@@ -19649,7 +19649,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -19685,7 +19685,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -19770,7 +19770,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -20510,7 +20510,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -20662,7 +20662,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -20752,7 +20752,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -21003,7 +21003,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -21250,7 +21250,7 @@ node {
     value {
       shape {
         dim {
-          size: 32
+          size: 8
         }
         dim {
           size: 128
@@ -21710,7 +21710,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -21766,7 +21766,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -21801,7 +21801,7 @@ node {
         dtype: DT_INT32
         tensor_shape {
         }
-        int_val: 32
+        int_val: 8
       }
     }
   }
@@ -21976,7 +21976,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -22154,7 +22154,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -22162,7 +22162,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -22299,7 +22299,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -22338,7 +22338,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -22375,7 +22375,7 @@ node {
         dtype: DT_INT32
         tensor_shape {
         }
-        int_val: 32
+        int_val: 8
       }
     }
   }
@@ -22411,7 +22411,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -22766,7 +22766,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -26008,7 +26008,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -26052,7 +26052,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -26309,7 +26309,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -26344,7 +26344,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
@@ -26699,7 +26699,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -26707,7 +26707,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -26742,12 +26742,12 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -26916,7 +26916,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -26942,7 +26942,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -27012,7 +27012,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\001\000\000"
+        tensor_content: "\010\000\000\000\200\001\000\000"
       }
     }
   }
@@ -27095,7 +27095,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -27161,7 +27161,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -27188,7 +27188,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -27215,7 +27215,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -27241,7 +27241,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -27268,7 +27268,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -27295,7 +27295,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -27768,7 +27768,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 512
@@ -27839,7 +27839,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -28082,7 +28082,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -28114,7 +28114,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -28172,7 +28172,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -28180,7 +28180,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -28213,7 +28213,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -28686,7 +28686,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 512
@@ -28757,7 +28757,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -29000,7 +29000,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -29032,7 +29032,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -29059,7 +29059,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -29117,7 +29117,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -29144,7 +29144,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -29171,7 +29171,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -29778,7 +29778,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -31097,7 +31097,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -31168,7 +31168,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -31829,7 +31829,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -31909,7 +31909,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -32274,7 +32274,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -32322,7 +32322,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 1
@@ -32354,7 +32354,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 1
@@ -32381,7 +32381,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -32413,7 +32413,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -32493,7 +32493,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -32551,7 +32551,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -33220,7 +33220,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -33856,7 +33856,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -33936,7 +33936,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -33968,7 +33968,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -34604,7 +34604,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 25
@@ -34684,7 +34684,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 25
@@ -34754,7 +34754,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -34783,7 +34783,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -34858,7 +34858,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -34900,7 +34900,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -35070,7 +35070,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -35123,7 +35123,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -35131,7 +35131,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -35355,7 +35355,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -35394,7 +35394,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -35467,7 +35467,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -35488,7 +35488,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -36083,7 +36083,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -36109,7 +36109,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -36135,7 +36135,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -36304,7 +36304,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -36330,7 +36330,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -36492,7 +36492,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 25
@@ -36512,7 +36512,7 @@ node {
     value {
       shape {
         dim {
-          size: 32
+          size: 8
         }
         dim {
           size: 25
@@ -36676,7 +36676,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -36693,7 +36693,7 @@ node {
     value {
       shape {
         dim {
-          size: 32
+          size: 8
         }
       }
     }
@@ -36854,7 +36854,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -36874,7 +36874,7 @@ node {
     value {
       shape {
         dim {
-          size: 32
+          size: 8
         }
         dim {
           size: 128
@@ -37374,7 +37374,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 25
@@ -37547,7 +37547,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -37649,7 +37649,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -37703,7 +37703,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -38294,7 +38294,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -38635,7 +38635,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 1
@@ -38667,7 +38667,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 1
@@ -38694,7 +38694,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -38726,7 +38726,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -38798,7 +38798,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -38825,7 +38825,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -38948,7 +38948,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -41316,7 +41316,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -41430,7 +41430,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -41497,7 +41497,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -41524,7 +41524,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -41591,7 +41591,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -41632,7 +41632,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -41667,7 +41667,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -41936,7 +41936,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 25
@@ -42004,7 +42004,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 25
@@ -42293,7 +42293,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -42315,7 +42315,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -42576,7 +42576,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -42691,7 +42691,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -42905,7 +42905,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -42940,7 +42940,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -42948,7 +42948,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -42988,7 +42988,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -43023,7 +43023,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -43075,7 +43075,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -43532,7 +43532,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 25
@@ -43722,7 +43722,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -43926,7 +43926,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -44255,7 +44255,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -44479,7 +44479,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -44871,7 +44871,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -44976,7 +44976,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 25
@@ -45043,7 +45043,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -45051,7 +45051,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -45091,7 +45091,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -45126,7 +45126,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -45361,7 +45361,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -45369,7 +45369,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -45409,7 +45409,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -45444,7 +45444,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -45515,7 +45515,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -45727,7 +45727,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -45813,7 +45813,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -46197,7 +46197,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -46205,7 +46205,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -46291,7 +46291,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -46324,7 +46324,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -46829,7 +46829,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -46851,7 +46851,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -46887,7 +46887,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -46895,7 +46895,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -46928,7 +46928,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -46957,7 +46957,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -47433,7 +47433,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -47455,7 +47455,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -47482,7 +47482,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -47533,7 +47533,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -47562,7 +47562,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -47570,7 +47570,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -47597,7 +47597,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -47623,7 +47623,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -47649,7 +47649,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -47719,7 +47719,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -47973,7 +47973,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -48044,7 +48044,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -48256,7 +48256,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -48342,7 +48342,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -48766,7 +48766,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -49089,7 +49089,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -49313,7 +49313,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -49499,7 +49499,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -51370,7 +51370,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -51839,7 +51839,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -52158,7 +52158,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -52491,7 +52491,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -54337,7 +54337,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -55030,7 +55030,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -55481,7 +55481,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -56003,7 +56003,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -56270,7 +56270,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -56303,7 +56303,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -56405,7 +56405,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -56948,7 +56948,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -56989,7 +56989,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -57189,7 +57189,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -57398,7 +57398,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -57445,7 +57445,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -57456,7 +57456,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -57504,7 +57504,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -57542,7 +57542,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -57612,7 +57612,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -57717,7 +57717,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -58293,7 +58293,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -58385,7 +58385,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -59236,7 +59236,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -59278,7 +59278,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -59315,7 +59315,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -59406,7 +59406,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -59473,7 +59473,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -59514,7 +59514,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -59549,7 +59549,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -60164,7 +60164,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -60653,7 +60653,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -60720,7 +60720,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -60920,7 +60920,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -60953,7 +60953,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -61061,7 +61061,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -61138,7 +61138,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -61175,7 +61175,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -61399,7 +61399,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -61432,7 +61432,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -61499,7 +61499,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -61699,7 +61699,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -61732,7 +61732,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -61799,7 +61799,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -61840,7 +61840,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -61875,7 +61875,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -62134,7 +62134,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -62472,7 +62472,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -62645,7 +62645,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -62715,7 +62715,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -62742,7 +62742,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -63047,7 +63047,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -63150,7 +63150,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 512
@@ -63362,7 +63362,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 512
@@ -63448,7 +63448,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 512
@@ -63985,7 +63985,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\001\000\000"
+        tensor_content: "\010\000\000\000\200\001\000\000"
       }
     }
   }
@@ -64022,7 +64022,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -64081,7 +64081,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -64115,7 +64115,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -64156,7 +64156,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -64191,7 +64191,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -64467,7 +64467,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -64556,7 +64556,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -64585,7 +64585,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -64639,7 +64639,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -64671,7 +64671,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -64682,7 +64682,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -64712,7 +64712,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -64741,7 +64741,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -64770,7 +64770,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -64815,7 +64815,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -65098,7 +65098,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -65165,7 +65165,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -65365,7 +65365,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -65398,7 +65398,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -65506,7 +65506,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -65807,7 +65807,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -65845,7 +65845,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -65889,7 +65889,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -66129,7 +66129,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -66188,7 +66188,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -66221,7 +66221,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -66436,7 +66436,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -66469,7 +66469,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -66622,7 +66622,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -66692,7 +66692,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -66889,7 +66889,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 512
@@ -67101,7 +67101,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 512
@@ -67187,7 +67187,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 512
@@ -67750,7 +67750,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\001\000\000"
+        tensor_content: "\010\000\000\000\200\001\000\000"
       }
     }
   }
@@ -67974,7 +67974,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -68160,7 +68160,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -68579,7 +68579,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -68621,7 +68621,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\001\000\000"
+        tensor_content: "\010\000\000\000\200\001\000\000"
       }
     }
   }
@@ -68658,7 +68658,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\001\000\000"
+        tensor_content: "\010\000\000\000\200\001\000\000"
       }
     }
   }
@@ -68882,7 +68882,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -68915,7 +68915,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -68982,7 +68982,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -69182,7 +69182,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -69215,7 +69215,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -69282,7 +69282,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -69323,7 +69323,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -69358,7 +69358,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -69588,7 +69588,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\001\000\000"
+        tensor_content: "\010\000\000\000\200\001\000\000"
       }
     }
   }
@@ -69873,7 +69873,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -69940,7 +69940,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -70140,7 +70140,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -70172,7 +70172,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -70199,7 +70199,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -70226,7 +70226,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -70253,7 +70253,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -70355,7 +70355,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -70622,7 +70622,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -70944,7 +70944,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -70970,7 +70970,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 384
@@ -71392,7 +71392,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -71922,7 +71922,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -71953,7 +71953,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -71981,7 +71981,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -72022,7 +72022,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -72057,7 +72057,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -72374,7 +72374,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -72405,7 +72405,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -72433,7 +72433,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -72474,7 +72474,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -72509,7 +72509,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -72931,7 +72931,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73461,7 +73461,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -73492,7 +73492,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73520,7 +73520,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73561,7 +73561,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73596,7 +73596,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73615,7 +73615,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73637,7 +73637,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73664,7 +73664,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73715,7 +73715,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73744,7 +73744,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73752,7 +73752,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73779,7 +73779,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73805,7 +73805,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73831,7 +73831,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73872,7 +73872,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -73914,7 +73914,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -73951,7 +73951,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -74042,7 +74042,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -74109,7 +74109,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -74150,7 +74150,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -74185,7 +74185,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -74476,7 +74476,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
         }
       }
@@ -74507,7 +74507,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -74535,7 +74535,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -74576,7 +74576,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -74611,7 +74611,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -74722,7 +74722,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -75005,7 +75005,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -75072,7 +75072,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -75272,7 +75272,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -75305,7 +75305,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -75413,7 +75413,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -75490,7 +75490,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -75527,7 +75527,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -75751,7 +75751,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -75784,7 +75784,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -75851,7 +75851,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76051,7 +76051,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76084,7 +76084,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76151,7 +76151,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76192,7 +76192,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76227,7 +76227,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76246,7 +76246,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76268,7 +76268,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76295,7 +76295,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76346,7 +76346,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76375,7 +76375,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76383,7 +76383,7 @@ node {
         }
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76410,7 +76410,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76436,7 +76436,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76462,7 +76462,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76503,7 +76503,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76545,7 +76545,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -76582,7 +76582,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -76673,7 +76673,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76740,7 +76740,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76781,7 +76781,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76816,7 +76816,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -76912,7 +76912,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -77085,7 +77085,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -77155,7 +77155,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -77182,7 +77182,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -77293,7 +77293,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -77576,7 +77576,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -77643,7 +77643,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -77843,7 +77843,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -77876,7 +77876,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -77984,7 +77984,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -78061,7 +78061,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -78098,7 +78098,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -78322,7 +78322,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -78355,7 +78355,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -78422,7 +78422,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -78622,7 +78622,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -78655,7 +78655,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -78722,7 +78722,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -78763,7 +78763,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -78798,7 +78798,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -78868,7 +78868,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -78976,7 +78976,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -79149,7 +79149,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -79219,7 +79219,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -79246,7 +79246,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -79317,7 +79317,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -79529,7 +79529,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -79615,7 +79615,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -79928,7 +79928,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -80254,7 +80254,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -80291,7 +80291,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -80350,7 +80350,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -80384,7 +80384,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -80425,7 +80425,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -80460,7 +80460,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -80766,7 +80766,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -80978,7 +80978,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -81064,7 +81064,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -81349,7 +81349,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -81632,7 +81632,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -81699,7 +81699,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -81899,7 +81899,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -81932,7 +81932,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -82040,7 +82040,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -82369,7 +82369,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -82406,7 +82406,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -82465,7 +82465,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -82499,7 +82499,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -82540,7 +82540,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -82575,7 +82575,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -82851,7 +82851,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -83091,7 +83091,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -83133,7 +83133,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -83416,7 +83416,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -83483,7 +83483,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -83683,7 +83683,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -83716,7 +83716,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -83824,7 +83824,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -84059,7 +84059,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -84092,7 +84092,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -84133,7 +84133,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -84373,7 +84373,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -84443,7 +84443,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -84675,7 +84675,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -84708,7 +84708,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -84779,7 +84779,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -84991,7 +84991,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -85077,7 +85077,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -85390,7 +85390,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -85716,7 +85716,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -85940,7 +85940,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -86126,7 +86126,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -86467,7 +86467,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -86679,7 +86679,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -86765,7 +86765,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 256
@@ -87049,7 +87049,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -87091,7 +87091,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -87128,7 +87128,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -87352,7 +87352,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -87385,7 +87385,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -87452,7 +87452,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -87652,7 +87652,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -87685,7 +87685,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -87752,7 +87752,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -87793,7 +87793,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -87828,7 +87828,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -87871,7 +87871,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -88165,7 +88165,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -88389,7 +88389,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -88575,7 +88575,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -88887,7 +88887,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -89172,7 +89172,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -89239,7 +89239,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -89439,7 +89439,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -89471,7 +89471,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -89498,7 +89498,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -89525,7 +89525,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -89552,7 +89552,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -89654,7 +89654,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -89709,7 +89709,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -89750,7 +89750,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -89792,7 +89792,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -89829,7 +89829,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -90053,7 +90053,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -90086,7 +90086,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -90153,7 +90153,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -90353,7 +90353,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -90386,7 +90386,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -90453,7 +90453,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -90494,7 +90494,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -90529,7 +90529,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -90572,7 +90572,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -90804,7 +90804,7 @@ node {
             size: 2
           }
         }
-        tensor_content: " \000\000\000\200\000\000\000"
+        tensor_content: "\010\000\000\000\200\000\000\000"
       }
     }
   }
@@ -91089,7 +91089,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -91156,7 +91156,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -91356,7 +91356,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -91388,7 +91388,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -91415,7 +91415,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -91442,7 +91442,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -91469,7 +91469,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -91571,7 +91571,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -91626,7 +91626,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -92143,7 +92143,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -92499,7 +92499,7 @@ node {
             size: -1
           }
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: 128
@@ -92584,7 +92584,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -92643,7 +92643,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -92679,7 +92679,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -92735,7 +92735,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -117186,7 +117186,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -117437,7 +117437,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -117690,7 +117690,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -117941,7 +117941,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -118466,7 +118466,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -118508,7 +118508,7 @@ node {
       list {
         shape {
           dim {
-            size: 32
+            size: 8
           }
           dim {
             size: -1
@@ -124695,7 +124695,7 @@ node {
   input: "train_input_fn/bucket_queue/bucket/bucket/train_input_fn/bucket_queue/bucket/bucket_queue_0/size"
   input: "train_input_fn/bucket_queue/bucket/bucket/train_input_fn/bucket_queue/bucket/bucket_queue_1/size"
   input: "train_input_fn/bucket_queue/bucket/bucket/train_input_fn/bucket_queue/bucket/bucket_queue_2/size"
-  input: "train_input_fn/bucket_queue/bucket/bucket/train_input_fn/bucket_queue/bucket/top_queue/fraction_of_5512_full"
+  input: "train_input_fn/bucket_queue/bucket/bucket/train_input_fn/bucket_queue/bucket/top_queue/fraction_of_5128_full"
   input: "model/att_seq2seq/source_len"
   input: "model/att_seq2seq/target_len"
   input: "model/att_seq2seq/num_tokens"
@@ -124817,7 +124817,7 @@ node {
         dtype: DT_STRING
         tensor_shape {
         }
-        string_val: "_temp_f28d44b227de4176a64aa5a3a485c71f/part"
+        string_val: "_temp_b74f73a2ebd64543b4ceaf4d948005df/part"
       }
     }
   }

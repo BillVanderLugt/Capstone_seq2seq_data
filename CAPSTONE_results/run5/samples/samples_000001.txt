@@ -1,0 +1,28 @@
+Prediction followed by Target @ Step 1
+====================================================================================================
+7 SEQUENCE_START SEQUENCE_START 7 7 7 8 9 9 8 8
+4 19 4 13 6 14 5 11 7 5 SEQUENCE_END
+
+SEQUENCE_START 2 19 19 19 19
+4 13 12 14 5 SEQUENCE_END
+
+SEQUENCE_START 6 21 6 6 6 19 SEQUENCE_START 5 6 6 6 10
+20 4 13 9 14 5 8 4 15 9 13 5 SEQUENCE_END
+
+SEQUENCE_START 19 19 19 19 18
+4 13 11 7 5 SEQUENCE_END
+
+SEQUENCE_START 19 19 19 8 8
+4 13 11 7 5 SEQUENCE_END
+
+1 17 2 6 10 19 1 10 2 18
+4 4 13 6 14 5 10 7 5 SEQUENCE_END
+
+6 6 2 6 6 2 14 14 6 14 14 14 14 2 14 14 14 14 14 6 14 UNK
+4 4 13 12 4 14 2 15 5 5 3 4 4 14 2 15 5 12 13 5 5 SEQUENCE_END
+
+19 19 19 19 19 19
+4 13 9 14 5 SEQUENCE_END
+
+====================================================================================================
+

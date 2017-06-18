@@ -1,0 +1,28 @@
+Prediction followed by Target @ Step 5001
+====================================================================================================
+4 13 12 14 5 SEQUENCE_END
+4 13 12 14 5 SEQUENCE_END
+
+4 4 9 4 14 6 15 5 5 SEQUENCE_END
+4 13 12 4 14 2 15 5 5 SEQUENCE_END
+
+4 21 4 13 3 13 5 11 7 5 SEQUENCE_END
+4 19 4 13 6 14 5 12 7 5 SEQUENCE_END
+
+4 13 9 14 5 SEQUENCE_END
+4 13 9 14 5 SEQUENCE_END
+
+20 4 13 11 7 5 8 4 14 11 7 5 SEQUENCE_END
+20 4 13 11 7 5 8 4 14 11 7 5 SEQUENCE_END
+
+4 13 9 14 5 SEQUENCE_END
+4 13 9 14 5 SEQUENCE_END
+
+4 19 9 14 5 SEQUENCE_END
+4 13 9 14 5 SEQUENCE_END
+
+4 4 9 14 5 SEQUENCE_END
+4 13 9 14 5 SEQUENCE_END
+
+====================================================================================================
+
