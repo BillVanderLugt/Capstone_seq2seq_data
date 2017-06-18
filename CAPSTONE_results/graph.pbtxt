@@ -1733,7 +1733,7 @@ node {
   attr {
     key: "seed2"
     value {
-      i: 339370824
+      i: 620508613
     }
   }
   attr {
@@ -8425,6 +8425,186 @@ node {
   }
 }
 node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/DropoutWrapperInit/Const"
+  op: "Const"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 0.800000011920929
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/DropoutWrapperInit/Const_1"
+  op: "Const"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/DropoutWrapperInit/Const_2"
+  op: "Const"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/DropoutWrapperInit_1/Const"
+  op: "Const"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 0.800000011920929
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/DropoutWrapperInit_1/Const_1"
+  op: "Const"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/DropoutWrapperInit_1/Const_2"
+  op: "Const"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
   name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/transpose/perm"
   op: "Const"
   attr {
@@ -8883,7 +9063,7 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/GRUCellZeroState/stack/1"
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/DropoutWrapperZeroState/GRUCellZeroState/stack/1"
   op: "Const"
   attr {
     key: "_output_shapes"
@@ -8913,10 +9093,10 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/GRUCellZeroState/stack"
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/DropoutWrapperZeroState/GRUCellZeroState/stack"
   op: "Pack"
   input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/strided_slice"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/GRUCellZeroState/stack/1"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/DropoutWrapperZeroState/GRUCellZeroState/stack/1"
   attr {
     key: "N"
     value {
@@ -8949,7 +9129,7 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/GRUCellZeroState/zeros/Const"
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/DropoutWrapperZeroState/GRUCellZeroState/zeros/Const"
   op: "Const"
   attr {
     key: "_output_shapes"
@@ -8979,10 +9159,10 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/GRUCellZeroState/zeros"
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/DropoutWrapperZeroState/GRUCellZeroState/zeros"
   op: "Fill"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/GRUCellZeroState/stack"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/GRUCellZeroState/zeros/Const"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/DropoutWrapperZeroState/GRUCellZeroState/stack"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/DropoutWrapperZeroState/GRUCellZeroState/zeros/Const"
   attr {
     key: "T"
     value {
@@ -10480,7 +10660,7 @@ node {
 node {
   name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/Enter_2"
   op: "Enter"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/GRUCellZeroState/zeros"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/DropoutWrapperZeroState/GRUCellZeroState/zeros"
   attr {
     key: "T"
     value {
@@ -10990,6 +11170,362 @@ node {
   }
 }
 node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/keep_prob"
+  op: "Const"
+  input: "^model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/Identity"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 0.800000011920929
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/Shape"
+  op: "Const"
+  input: "^model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/Identity"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: " \000\000\000\200\000\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/random_uniform/min"
+  op: "Const"
+  input: "^model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/Identity"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 0.0
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/random_uniform/max"
+  op: "Const"
+  input: "^model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/Identity"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/random_uniform/RandomUniform"
+  op: "RandomUniform"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/Shape"
+  attr {
+    key: "T"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "seed"
+    value {
+      i: 0
+    }
+  }
+  attr {
+    key: "seed2"
+    value {
+      i: 0
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/random_uniform/sub"
+  op: "Sub"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/random_uniform/max"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/random_uniform/min"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/random_uniform/mul"
+  op: "Mul"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/random_uniform/RandomUniform"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/random_uniform/sub"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/random_uniform"
+  op: "Add"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/random_uniform/mul"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/random_uniform/min"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/add"
+  op: "Add"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/keep_prob"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/random_uniform"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/Floor"
+  op: "Floor"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/add"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div"
+  op: "RealDiv"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/keep_prob"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul"
+  op: "Mul"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/Floor"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
   name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/gru_cell/gates/weights/Initializer/random_uniform/shape"
   op: "Const"
   attr {
@@ -11425,7 +11961,7 @@ node {
 node {
   name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/gru_cell/gates/gates/concat"
   op: "ConcatV2"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul"
   input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/Identity_2"
   input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/gru_cell/gates/gates/concat/axis"
   attr {
@@ -12343,7 +12879,7 @@ node {
 node {
   name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/gru_cell/candidate/candidate/concat"
   op: "ConcatV2"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul"
   input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/gru_cell/candidate/mul"
   input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/gru_cell/candidate/candidate/concat/axis"
   attr {
@@ -14081,7 +14617,7 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/GRUCellZeroState/stack/1"
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/DropoutWrapperZeroState/GRUCellZeroState/stack/1"
   op: "Const"
   attr {
     key: "_output_shapes"
@@ -14111,10 +14647,10 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/GRUCellZeroState/stack"
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/DropoutWrapperZeroState/GRUCellZeroState/stack"
   op: "Pack"
   input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/strided_slice"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/GRUCellZeroState/stack/1"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/DropoutWrapperZeroState/GRUCellZeroState/stack/1"
   attr {
     key: "N"
     value {
@@ -14147,7 +14683,7 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/GRUCellZeroState/zeros/Const"
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/DropoutWrapperZeroState/GRUCellZeroState/zeros/Const"
   op: "Const"
   attr {
     key: "_output_shapes"
@@ -14177,10 +14713,10 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/GRUCellZeroState/zeros"
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/DropoutWrapperZeroState/GRUCellZeroState/zeros"
   op: "Fill"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/GRUCellZeroState/stack"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/GRUCellZeroState/zeros/Const"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/DropoutWrapperZeroState/GRUCellZeroState/stack"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/DropoutWrapperZeroState/GRUCellZeroState/zeros/Const"
   attr {
     key: "T"
     value {
@@ -15678,7 +16214,7 @@ node {
 node {
   name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/Enter_2"
   op: "Enter"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/GRUCellZeroState/zeros"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/DropoutWrapperZeroState/GRUCellZeroState/zeros"
   attr {
     key: "T"
     value {
@@ -16188,6 +16724,362 @@ node {
   }
 }
 node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/keep_prob"
+  op: "Const"
+  input: "^model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/Identity"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 0.800000011920929
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/Shape"
+  op: "Const"
+  input: "^model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/Identity"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: " \000\000\000\200\000\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/random_uniform/min"
+  op: "Const"
+  input: "^model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/Identity"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 0.0
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/random_uniform/max"
+  op: "Const"
+  input: "^model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/Identity"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/random_uniform/RandomUniform"
+  op: "RandomUniform"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/Shape"
+  attr {
+    key: "T"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "seed"
+    value {
+      i: 0
+    }
+  }
+  attr {
+    key: "seed2"
+    value {
+      i: 0
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/random_uniform/sub"
+  op: "Sub"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/random_uniform/max"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/random_uniform/min"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/random_uniform/mul"
+  op: "Mul"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/random_uniform/RandomUniform"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/random_uniform/sub"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/random_uniform"
+  op: "Add"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/random_uniform/mul"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/random_uniform/min"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/add"
+  op: "Add"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/keep_prob"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/random_uniform"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/Floor"
+  op: "Floor"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/add"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div"
+  op: "RealDiv"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/TensorArrayReadV3"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/keep_prob"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul"
+  op: "Mul"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/Floor"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
   name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/gru_cell/gates/weights/Initializer/random_uniform/shape"
   op: "Const"
   attr {
@@ -16623,7 +17515,7 @@ node {
 node {
   name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/concat"
   op: "ConcatV2"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/TensorArrayReadV3"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul"
   input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/Identity_2"
   input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/concat/axis"
   attr {
@@ -17541,7 +18433,7 @@ node {
 node {
   name: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/candidate/candidate/concat"
   op: "ConcatV2"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/TensorArrayReadV3"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul"
   input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/candidate/mul"
   input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/candidate/candidate/concat/axis"
   attr {
@@ -18889,6 +19781,96 @@ node {
             size: 256
           }
         }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/DropoutWrapperInit/Const"
+  op: "Const"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 0.800000011920929
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/DropoutWrapperInit/Const_1"
+  op: "Const"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/DropoutWrapperInit/Const_2"
+  op: "Const"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
       }
     }
   }
@@ -25970,6 +26952,362 @@ node {
   }
 }
 node {
+  name: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/keep_prob"
+  op: "Const"
+  input: "^model/att_seq2seq/decode/attention_decoder/decoder/while/Identity"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 0.800000011920929
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/Shape"
+  op: "Const"
+  input: "^model/att_seq2seq/decode/attention_decoder/decoder/while/Identity"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: " \000\000\000\200\001\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/random_uniform/min"
+  op: "Const"
+  input: "^model/att_seq2seq/decode/attention_decoder/decoder/while/Identity"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 0.0
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/random_uniform/max"
+  op: "Const"
+  input: "^model/att_seq2seq/decode/attention_decoder/decoder/while/Identity"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_FLOAT
+        tensor_shape {
+        }
+        float_val: 1.0
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/random_uniform/RandomUniform"
+  op: "RandomUniform"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/Shape"
+  attr {
+    key: "T"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "seed"
+    value {
+      i: 0
+    }
+  }
+  attr {
+    key: "seed2"
+    value {
+      i: 0
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/random_uniform/sub"
+  op: "Sub"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/random_uniform/max"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/random_uniform/min"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/random_uniform/mul"
+  op: "Mul"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/random_uniform/RandomUniform"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/random_uniform/sub"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/random_uniform"
+  op: "Add"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/random_uniform/mul"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/random_uniform/min"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/add"
+  op: "Add"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/keep_prob"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/random_uniform"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/Floor"
+  op: "Floor"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/add"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div"
+  op: "RealDiv"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/keep_prob"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul"
+  op: "Mul"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/Floor"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
   name: "model/att_seq2seq/decode/attention_decoder/decoder/gru_cell/gates/weights/Initializer/random_uniform/shape"
   op: "Const"
   attr {
@@ -26405,7 +27743,7 @@ node {
 node {
   name: "model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/gates/gates/concat"
   op: "ConcatV2"
-  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul"
   input: "model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_6"
   input: "model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/gates/gates/concat/axis"
   attr {
@@ -27323,7 +28661,7 @@ node {
 node {
   name: "model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/candidate/candidate/concat"
   op: "ConcatV2"
-  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul"
   input: "model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/candidate/mul"
   input: "model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/candidate/candidate/concat/axis"
   attr {
@@ -38200,6 +39538,10 @@ node {
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/gates/gates/MatMul_grad/MatMul_1/StackPush"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/gates/gates/concat_grad/mod/StackPush"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/gates/gates/concat_grad/ShapeN/StackPush"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul/StackPush"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1/StackPush"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/StackPush"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg/StackPush"
   attr {
     key: "T"
     value {
@@ -38684,6 +40026,10 @@ node {
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/gru_cell/gates/gates/MatMul_grad/MatMul_1/StackPush"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/gru_cell/gates/gates/concat_grad/mod/StackPush"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/gru_cell/gates/gates/concat_grad/ShapeN/StackPush"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul/StackPush"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1/StackPush"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/StackPush"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg/StackPush"
   attr {
     key: "T"
     value {
@@ -39168,6 +40514,10 @@ node {
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/MatMul_grad/MatMul_1/StackPush"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/concat_grad/mod/StackPush"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/concat_grad/ShapeN/StackPush"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul/StackPush"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1/StackPush"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/StackPush"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg/StackPush"
   attr {
     key: "T"
     value {
@@ -42109,6 +43459,10 @@ node {
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/gates/gates/MatMul_grad/MatMul_1/StackPop"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/gates/gates/concat_grad/mod/StackPop"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/gates/gates/concat_grad/ShapeN/StackPop"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul/StackPop"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1/StackPop"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/StackPop"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg/StackPop"
   attr {
     key: "_class"
     value {
@@ -66439,7 +67793,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul"
       }
     }
   }
@@ -66482,7 +67836,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul"
       }
     }
   }
@@ -66521,7 +67875,7 @@ node {
   name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/gates/gates/concat_grad/ShapeN/StackPush"
   op: "StackPush"
   input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/gates/gates/concat_grad/ShapeN/RefEnter"
-  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/Add"
   attr {
     key: "T"
@@ -66533,7 +67887,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul"
       }
     }
   }
@@ -66568,7 +67922,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul"
       }
     }
   }
@@ -66612,7 +67966,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul"
       }
     }
   }
@@ -67238,6 +68592,785 @@ node {
   }
 }
 node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Shape"
+  op: "Const"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: " \000\000\000\200\001\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Shape_1"
+  op: "Const"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: " \000\000\000\200\001\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/BroadcastGradientArgs"
+  op: "BroadcastGradientArgs"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Shape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Shape_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: -1
+          }
+        }
+        shape {
+          dim {
+            size: -1
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul/f_acc"
+  op: "Stack"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "stack_name"
+    value {
+      s: ""
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/decode/attention_decoder/decoder/while/model/att_seq2seq/decode/attention_decoder/decoder/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul/StackPush"
+  op: "StackPush"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul/RefEnter"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/Floor"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Add"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "swap_memory"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul/StackPop/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/model/att_seq2seq/decode/attention_decoder/decoder/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul/StackPop"
+  op: "StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul/StackPop/RefEnter"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul"
+  op: "Mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/AddN_7"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Sum"
+  op: "Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/BroadcastGradientArgs"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tidx"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "keep_dims"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Reshape"
+  op: "Reshape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Shape"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1/f_acc"
+  op: "Stack"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "stack_name"
+    value {
+      s: ""
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/decode/attention_decoder/decoder/while/model/att_seq2seq/decode/attention_decoder/decoder/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1/StackPush"
+  op: "StackPush"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1/RefEnter"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Add"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "swap_memory"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1/StackPop/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/model/att_seq2seq/decode/attention_decoder/decoder/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1/StackPop"
+  op: "StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1/StackPop/RefEnter"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1"
+  op: "Mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1/StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/AddN_7"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Sum_1"
+  op: "Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/mul_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/BroadcastGradientArgs:1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tidx"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "keep_dims"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Reshape_1"
+  op: "Reshape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Sum_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Shape_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/tuple/group_deps"
+  op: "NoOp"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Reshape"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Reshape_1"
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/tuple/control_dependency"
+  op: "Identity"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Reshape"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/tuple/group_deps"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Reshape"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/tuple/control_dependency_1"
+  op: "Identity"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Reshape_1"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/tuple/group_deps"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/Reshape_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
   name: "model/att_seq2seq/OptimizeLoss/gradients/AddN_8"
   op: "AddN"
   input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/gru_cell/mul_grad/tuple/control_dependency_1"
@@ -67426,9 +69559,310 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/Switch_7_grad_1/NextIteration"
-  op: "NextIteration"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/AddN_7"
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Shape"
+  op: "Const"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: " \000\000\000\200\001\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Shape_1"
+  op: "Const"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/BroadcastGradientArgs"
+  op: "BroadcastGradientArgs"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Shape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Shape_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: -1
+          }
+        }
+        shape {
+          dim {
+            size: -1
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/f_acc"
+  op: "Stack"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "stack_name"
+    value {
+      s: ""
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/decode/attention_decoder/decoder/while/model/att_seq2seq/decode/attention_decoder/decoder/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/StackPush"
+  op: "StackPush"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/RefEnter"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/keep_prob"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Add"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "swap_memory"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/StackPop/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/model/att_seq2seq/decode/attention_decoder/decoder/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/StackPop"
+  op: "StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/StackPop/RefEnter"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv"
+  op: "RealDiv"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/tuple/control_dependency"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/StackPop"
   attr {
     key: "T"
     value {
@@ -67446,6 +69880,517 @@ node {
           dim {
             size: 384
           }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Sum"
+  op: "Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/BroadcastGradientArgs"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tidx"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "keep_dims"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Reshape"
+  op: "Reshape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Shape"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg/f_acc"
+  op: "Stack"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "stack_name"
+    value {
+      s: ""
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/decode/attention_decoder/decoder/while/model/att_seq2seq/decode/attention_decoder/decoder/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg/StackPush"
+  op: "StackPush"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg/RefEnter"
+  input: "model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Add"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "swap_memory"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg/StackPop/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/model/att_seq2seq/decode/attention_decoder/decoder/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg/StackPop"
+  op: "StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg/StackPop/RefEnter"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/decode/attention_decoder/decoder/while/Identity_7"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg"
+  op: "Neg"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv_1"
+  op: "RealDiv"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Neg"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv_2"
+  op: "RealDiv"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/mul"
+  op: "Mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/mul_grad/tuple/control_dependency"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/RealDiv_2"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Sum_1"
+  op: "Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/BroadcastGradientArgs:1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tidx"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "keep_dims"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Reshape_1"
+  op: "Reshape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Sum_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Shape_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/tuple/group_deps"
+  op: "NoOp"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Reshape"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Reshape_1"
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/tuple/control_dependency"
+  op: "Identity"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Reshape"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/tuple/group_deps"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Reshape"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/tuple/control_dependency_1"
+  op: "Identity"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Reshape_1"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/tuple/group_deps"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/Reshape_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
         }
       }
     }
@@ -68012,6 +70957,32 @@ node {
   }
 }
 node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/Switch_7_grad_1/NextIteration"
+  op: "NextIteration"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/decode/attention_decoder/decoder/while/dropout/div_grad/tuple/control_dependency"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 384
+          }
+        }
+      }
+    }
+  }
+}
+node {
   name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayWrite/TensorArrayWriteV3_grad/TensorArrayGrad/TensorArrayGradV3/Enter"
   op: "Enter"
   input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray"
@@ -68348,6 +71319,10 @@ node {
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/gru_cell/gates/gates/MatMul_grad/MatMul_1/StackPop"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/gru_cell/gates/gates/concat_grad/mod/StackPop"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/gru_cell/gates/gates/concat_grad/ShapeN/StackPop"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul/StackPop"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1/StackPop"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/StackPop"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg/StackPop"
   attr {
     key: "_class"
     value {
@@ -68459,7 +71434,7 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/GRUCellZeroState/zeros_grad/Const"
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/DropoutWrapperZeroState/GRUCellZeroState/zeros_grad/Const"
   op: "Const"
   attr {
     key: "_output_shapes"
@@ -68495,10 +71470,10 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/GRUCellZeroState/zeros_grad/Sum"
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/DropoutWrapperZeroState/GRUCellZeroState/zeros_grad/Sum"
   op: "Sum"
   input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/Enter_2_grad/Exit"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/GRUCellZeroState/zeros_grad/Const"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/DropoutWrapperZeroState/GRUCellZeroState/zeros_grad/Const"
   attr {
     key: "T"
     value {
@@ -69883,6 +72858,10 @@ node {
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/MatMul_grad/MatMul_1/StackPop"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/concat_grad/mod/StackPop"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/concat_grad/ShapeN/StackPop"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul/StackPop"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1/StackPop"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/StackPop"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg/StackPop"
   attr {
     key: "_class"
     value {
@@ -69994,7 +72973,7 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/GRUCellZeroState/zeros_grad/Const"
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/DropoutWrapperZeroState/GRUCellZeroState/zeros_grad/Const"
   op: "Const"
   attr {
     key: "_output_shapes"
@@ -70030,10 +73009,10 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/GRUCellZeroState/zeros_grad/Sum"
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/DropoutWrapperZeroState/GRUCellZeroState/zeros_grad/Sum"
   op: "Sum"
   input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/Enter_2_grad/Exit"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/GRUCellZeroState/zeros_grad/Const"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/DropoutWrapperZeroState/GRUCellZeroState/zeros_grad/Const"
   attr {
     key: "T"
     value {
@@ -82780,7 +85759,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul"
       }
     }
   }
@@ -82823,7 +85802,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul"
       }
     }
   }
@@ -82862,7 +85841,7 @@ node {
   name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/gru_cell/gates/gates/concat_grad/ShapeN/StackPush"
   op: "StackPush"
   input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/gru_cell/gates/gates/concat_grad/ShapeN/RefEnter"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/Add_1"
   attr {
     key: "T"
@@ -82874,7 +85853,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul"
       }
     }
   }
@@ -82909,7 +85888,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul"
       }
     }
   }
@@ -82953,7 +85932,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul"
       }
     }
   }
@@ -84083,20 +87062,245 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3/Enter"
-  op: "Enter"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Shape"
+  op: "Const"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_1"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: " \000\000\000\200\000\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Shape_1"
+  op: "Const"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_1"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: " \000\000\000\200\000\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/BroadcastGradientArgs"
+  op: "BroadcastGradientArgs"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Shape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Shape_1"
   attr {
     key: "T"
     value {
-      type: DT_RESOURCE
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: -1
+          }
+        }
+        shape {
+          dim {
+            size: -1
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul/f_acc"
+  op: "Stack"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "stack_name"
+    value {
+      s: ""
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
     }
   }
   attr {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul/StackPush"
+  op: "StackPush"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul/RefEnter"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/Floor"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Add_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "swap_memory"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul/StackPop/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/Floor"
       }
     }
   }
@@ -84132,62 +87336,142 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3/Enter_1"
-  op: "Enter"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArrayUnstack/TensorArrayScatter/TensorArrayScatterV3"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
-      }
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "frame_name"
-    value {
-      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/"
-    }
-  }
-  attr {
-    key: "is_constant"
-    value {
-      b: true
-    }
-  }
-  attr {
-    key: "parallel_iterations"
-    value {
-      i: 32
-    }
-  }
-}
-node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3"
-  op: "TensorArrayGradV3"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3/Enter"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3/Enter_1"
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul/StackPop"
+  op: "StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul/StackPop/RefEnter"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_1"
   attr {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul"
+  op: "Mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/AddN_13"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Sum"
+  op: "Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/BroadcastGradientArgs"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tidx"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "keep_dims"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Reshape"
+  op: "Reshape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Shape"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1/f_acc"
+  op: "Stack"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div"
       }
     }
   }
@@ -84200,23 +87484,77 @@ node {
             size: 2
           }
         }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "stack_name"
+    value {
+      s: ""
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
         shape {
+          dim {
+            size: 2
+          }
         }
       }
     }
   }
   attr {
-    key: "source"
+    key: "frame_name"
     value {
-      s: "model/att_seq2seq/OptimizeLoss/gradients"
+      s: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
     }
   }
 }
 node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/gradient_flow"
-  op: "Identity"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3/Enter_1"
-  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3"
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1/StackPush"
+  op: "StackPush"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1/RefEnter"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Add_1"
   attr {
     key: "T"
     value {
@@ -84227,7 +87565,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div"
       }
     }
   }
@@ -84236,18 +87574,207 @@ node {
     value {
       list {
         shape {
+          unknown_rank: true
         }
       }
     }
   }
+  attr {
+    key: "swap_memory"
+    value {
+      b: false
+    }
+  }
 }
 node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayWrite/TensorArrayWriteV3"
-  op: "TensorArrayWriteV3"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayWrite/TensorArrayWriteV3_grad/TensorArrayReadV3/StackPop"
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1/StackPop/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1/StackPop"
+  op: "StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1/StackPop/RefEnter"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_1"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1"
+  op: "Mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1/StackPop"
   input: "model/att_seq2seq/OptimizeLoss/gradients/AddN_13"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/gradient_flow"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Sum_1"
+  op: "Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/mul_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/BroadcastGradientArgs:1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tidx"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "keep_dims"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Reshape_1"
+  op: "Reshape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Sum_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Shape_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/tuple/group_deps"
+  op: "NoOp"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Reshape"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Reshape_1"
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/tuple/control_dependency"
+  op: "Identity"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Reshape"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/tuple/group_deps"
   attr {
     key: "T"
     value {
@@ -84258,7 +87785,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Reshape"
       }
     }
   }
@@ -84267,6 +87794,47 @@ node {
     value {
       list {
         shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/tuple/control_dependency_1"
+  op: "Identity"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Reshape_1"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/tuple/group_deps"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/Reshape_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
         }
       }
     }
@@ -84640,7 +88208,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul"
       }
     }
   }
@@ -84683,7 +88251,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul"
       }
     }
   }
@@ -84722,7 +88290,7 @@ node {
   name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/concat_grad/ShapeN/StackPush"
   op: "StackPush"
   input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/concat_grad/ShapeN/RefEnter"
-  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/TensorArrayReadV3"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul"
   input: "^model/att_seq2seq/OptimizeLoss/gradients/Add_2"
   attr {
     key: "T"
@@ -84734,7 +88302,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul"
       }
     }
   }
@@ -84769,7 +88337,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul"
       }
     }
   }
@@ -84813,7 +88381,7 @@ node {
     key: "_class"
     value {
       list {
-        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/TensorArray_1"
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul"
       }
     }
   }
@@ -85290,6 +88858,2787 @@ node {
   }
 }
 node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Shape"
+  op: "Const"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_1"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: " \000\000\000\200\000\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Shape_1"
+  op: "Const"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_1"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/BroadcastGradientArgs"
+  op: "BroadcastGradientArgs"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Shape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Shape_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: -1
+          }
+        }
+        shape {
+          dim {
+            size: -1
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/f_acc"
+  op: "Stack"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "stack_name"
+    value {
+      s: ""
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/StackPush"
+  op: "StackPush"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/RefEnter"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/keep_prob"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Add_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "swap_memory"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/StackPop/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/StackPop"
+  op: "StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/StackPop/RefEnter"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_1"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv"
+  op: "RealDiv"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/tuple/control_dependency"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Sum"
+  op: "Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/BroadcastGradientArgs"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tidx"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "keep_dims"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Reshape"
+  op: "Reshape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Shape"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg/f_acc"
+  op: "Stack"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "stack_name"
+    value {
+      s: ""
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg/StackPush"
+  op: "StackPush"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg/RefEnter"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Add_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "swap_memory"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg/StackPop/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg/StackPop"
+  op: "StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg/StackPop/RefEnter"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_1"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg"
+  op: "Neg"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv_1"
+  op: "RealDiv"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Neg"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv_2"
+  op: "RealDiv"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/mul"
+  op: "Mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/mul_grad/tuple/control_dependency"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/RealDiv_2"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Sum_1"
+  op: "Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/BroadcastGradientArgs:1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tidx"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "keep_dims"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Reshape_1"
+  op: "Reshape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Sum_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Shape_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/tuple/group_deps"
+  op: "NoOp"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Reshape"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Reshape_1"
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/tuple/control_dependency"
+  op: "Identity"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Reshape"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/tuple/group_deps"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Reshape"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/tuple/control_dependency_1"
+  op: "Identity"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Reshape_1"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/tuple/group_deps"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/Reshape_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/Switch_2_grad_1/NextIteration"
+  op: "NextIteration"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/AddN_14"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/AddN_15"
+  op: "AddN"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/candidate/candidate/concat_grad/tuple/control_dependency"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/concat_grad/tuple/control_dependency"
+  attr {
+    key: "N"
+    value {
+      i: 2
+    }
+  }
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/candidate/candidate/concat_grad/Slice"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Shape"
+  op: "Const"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_2"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: " \000\000\000\200\000\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Shape_1"
+  op: "Const"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_2"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: " \000\000\000\200\000\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/BroadcastGradientArgs"
+  op: "BroadcastGradientArgs"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Shape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Shape_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: -1
+          }
+        }
+        shape {
+          dim {
+            size: -1
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul/f_acc"
+  op: "Stack"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "stack_name"
+    value {
+      s: ""
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul/StackPush"
+  op: "StackPush"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul/RefEnter"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/Floor"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Add_2"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "swap_memory"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul/StackPop/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul/StackPop"
+  op: "StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul/StackPop/RefEnter"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_2"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/Floor"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul"
+  op: "Mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/AddN_15"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Sum"
+  op: "Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/BroadcastGradientArgs"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tidx"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "keep_dims"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Reshape"
+  op: "Reshape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Shape"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1/f_acc"
+  op: "Stack"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "stack_name"
+    value {
+      s: ""
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1/StackPush"
+  op: "StackPush"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1/RefEnter"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Add_2"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "swap_memory"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1/StackPop/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1/StackPop"
+  op: "StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1/StackPop/RefEnter"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_2"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1"
+  op: "Mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1/StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/AddN_15"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Sum_1"
+  op: "Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/mul_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/BroadcastGradientArgs:1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tidx"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "keep_dims"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Reshape_1"
+  op: "Reshape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Sum_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Shape_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/tuple/group_deps"
+  op: "NoOp"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Reshape"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Reshape_1"
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/tuple/control_dependency"
+  op: "Identity"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Reshape"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/tuple/group_deps"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Reshape"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/tuple/control_dependency_1"
+  op: "Identity"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Reshape_1"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/tuple/group_deps"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/Reshape_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/AddN_16"
+  op: "AddN"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/Select_1_grad/tuple/control_dependency"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/mul_grad/tuple/control_dependency_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/candidate/mul_grad/tuple/control_dependency_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/concat_grad/tuple/control_dependency_1"
+  attr {
+    key: "N"
+    value {
+      i: 4
+    }
+  }
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/Select_1_grad/Select"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3/Enter"
+  op: "Enter"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_RESOURCE
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3/Enter_1"
+  op: "Enter"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArrayUnstack/TensorArrayScatter/TensorArrayScatterV3"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3"
+  op: "TensorArrayGradV3"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3/Enter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3/Enter_1"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_1"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "source"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients"
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/gradient_flow"
+  op: "Identity"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3/Enter_1"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayWrite/TensorArrayWriteV3"
+  op: "TensorArrayWriteV3"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayWrite/TensorArrayWriteV3_grad/TensorArrayReadV3/StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/dropout/div_grad/tuple/control_dependency"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3_grad/TensorArrayGrad/gradient_flow"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Shape"
+  op: "Const"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_2"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+            size: 2
+          }
+        }
+        tensor_content: " \000\000\000\200\000\000\000"
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Shape_1"
+  op: "Const"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_2"
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "dtype"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "value"
+    value {
+      tensor {
+        dtype: DT_INT32
+        tensor_shape {
+          dim {
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/BroadcastGradientArgs"
+  op: "BroadcastGradientArgs"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Shape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Shape_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: -1
+          }
+        }
+        shape {
+          dim {
+            size: -1
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/f_acc"
+  op: "Stack"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "stack_name"
+    value {
+      s: ""
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/StackPush"
+  op: "StackPush"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/RefEnter"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/keep_prob"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Add_2"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "swap_memory"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/StackPop/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/StackPop"
+  op: "StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/StackPop/RefEnter"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_2"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/keep_prob"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv"
+  op: "RealDiv"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/tuple/control_dependency"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Sum"
+  op: "Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/BroadcastGradientArgs"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tidx"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "keep_dims"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Reshape"
+  op: "Reshape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Shape"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg/f_acc"
+  op: "Stack"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "stack_name"
+    value {
+      s: ""
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg/StackPush"
+  op: "StackPush"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg/RefEnter"
+  input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/TensorArrayReadV3"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Add_2"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "swap_memory"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg/StackPop/RefEnter"
+  op: "RefEnter"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg/f_acc"
+  attr {
+    key: "T"
+    value {
+      type: DT_STRING
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 2
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "frame_name"
+    value {
+      s: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/"
+    }
+  }
+  attr {
+    key: "is_constant"
+    value {
+      b: true
+    }
+  }
+  attr {
+    key: "parallel_iterations"
+    value {
+      i: 32
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg/StackPop"
+  op: "StackPop"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg/StackPop/RefEnter"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/Sub_2"
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/TensorArray_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+  attr {
+    key: "elem_type"
+    value {
+      type: DT_FLOAT
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg"
+  op: "Neg"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv_1"
+  op: "RealDiv"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Neg"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv_2"
+  op: "RealDiv"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv/StackPop"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/mul"
+  op: "Mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/mul_grad/tuple/control_dependency"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/RealDiv_2"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Sum_1"
+  op: "Sum"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/mul"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/BroadcastGradientArgs:1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tidx"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          unknown_rank: true
+        }
+      }
+    }
+  }
+  attr {
+    key: "keep_dims"
+    value {
+      b: false
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Reshape_1"
+  op: "Reshape"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Sum_1"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Shape_1"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "Tshape"
+    value {
+      type: DT_INT32
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/tuple/group_deps"
+  op: "NoOp"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Reshape"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Reshape_1"
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/tuple/control_dependency"
+  op: "Identity"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Reshape"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/tuple/group_deps"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Reshape"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/tuple/control_dependency_1"
+  op: "Identity"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Reshape_1"
+  input: "^model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/tuple/group_deps"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_class"
+    value {
+      list {
+        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/Reshape_1"
+      }
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+        }
+      }
+    }
+  }
+}
+node {
+  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/Switch_2_grad_1/NextIteration"
+  op: "NextIteration"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/AddN_16"
+  attr {
+    key: "T"
+    value {
+      type: DT_FLOAT
+    }
+  }
+  attr {
+    key: "_output_shapes"
+    value {
+      list {
+        shape {
+          dim {
+            size: 32
+          }
+          dim {
+            size: 128
+          }
+        }
+      }
+    }
+  }
+}
+node {
   name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/TensorArrayReadV3/Enter_1_grad/b_acc"
   op: "Const"
   attr {
@@ -85471,73 +91820,6 @@ node {
   }
 }
 node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/fw/fw/while/Switch_2_grad_1/NextIteration"
-  op: "NextIteration"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/AddN_14"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 32
-          }
-          dim {
-            size: 128
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/AddN_15"
-  op: "AddN"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/candidate/candidate/concat_grad/tuple/control_dependency"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/concat_grad/tuple/control_dependency"
-  attr {
-    key: "N"
-    value {
-      i: 2
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/candidate/candidate/concat_grad/Slice"
-      }
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 32
-          }
-          dim {
-            size: 128
-          }
-        }
-      }
-    }
-  }
-}
-node {
   name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3/Enter"
   op: "Enter"
   input: "model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/TensorArray_1"
@@ -85701,7 +91983,7 @@ node {
   op: "TensorArrayWriteV3"
   input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/TensorArrayReadV3_grad/TensorArrayGrad/TensorArrayGradV3"
   input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/TensorArrayWrite/TensorArrayWriteV3_grad/TensorArrayReadV3/StackPop"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/AddN_15"
+  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/dropout/div_grad/tuple/control_dependency"
   input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/TensorArrayReadV3_grad/TensorArrayGrad/gradient_flow"
   attr {
     key: "T"
@@ -85722,49 +92004,6 @@ node {
     value {
       list {
         shape {
-        }
-      }
-    }
-  }
-}
-node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/AddN_16"
-  op: "AddN"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/Select_1_grad/tuple/control_dependency"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/mul_grad/tuple/control_dependency_1"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/candidate/mul_grad/tuple/control_dependency_1"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/gru_cell/gates/gates/concat_grad/tuple/control_dependency_1"
-  attr {
-    key: "N"
-    value {
-      i: 4
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_class"
-    value {
-      list {
-        s: "loc:@model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/Select_1_grad/Select"
-      }
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 32
-          }
-          dim {
-            size: 128
-          }
         }
       }
     }
@@ -86121,32 +92360,6 @@ node {
     value {
       list {
         shape {
-        }
-      }
-    }
-  }
-}
-node {
-  name: "model/att_seq2seq/OptimizeLoss/gradients/model/att_seq2seq/encode/bidi_rnn_encoder/bidirectional_rnn/bw/bw/while/Switch_2_grad_1/NextIteration"
-  op: "NextIteration"
-  input: "model/att_seq2seq/OptimizeLoss/gradients/AddN_16"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 32
-          }
-          dim {
-            size: 128
-          }
         }
       }
     }
@@ -118606,7 +124819,7 @@ node {
         dtype: DT_STRING
         tensor_shape {
         }
-        string_val: "_temp_0fe0fef3b3ef4e2694a2f83ee507a534/part"
+        string_val: "_temp_3511b34866d746a8a1817cd9ae9399fc/part"
       }
     }
   }
